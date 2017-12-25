@@ -88,8 +88,10 @@ color:#333333;
                     <img src="img/3211.jpg" alt="First slide" >
                       <div class="carousel-caption site-heading">
         <h1><B>ONES.AI</h1></B>
-        <h3>一站式研发管理平台</h3>
-        <h4><B><a class="head-test" style="text-decoration: none; color:white;" href="https://ones.ai" >贡献力量服务更多的企业</a></B></h4>
+        <br>
+        <span class="typed"></span>
+        <!-- <h3>一站式研发管理平台</h3> -->
+        <h4><B><a class="head-test" style="text-decoration: none; color:white;" href="https://ones.ai" >马上体验</a></B></h4>
       </div>
   
                 </div>
@@ -137,7 +139,7 @@ color:#333333;
                 <div class="post-preview">
                     <a href="post.html">
                         <h2 class="post-title">
-                            ONES Project,敏捷开发的最佳实践
+                            ONES Project,敏捷开发最佳实践
                         </h2>
                         <h3 class="post-subtitle">
                             ONES Project 无缝支持 Scrum 与 DevOps 的完整流程，摒弃分散系统带来的成员和数据的割裂，使协作更紧密，数据反馈更及时，团队表现更优异。
@@ -153,7 +155,7 @@ color:#333333;
                         </h2>
                         <h3 class="post-subtitle">
                             ONES Wiki 是立体的知识管理方案，支持文档协作、知识沉淀和团队知识学习，
-                            帮助团队向知识型组织迈进。<br/>
+                            帮助团队向知识型组织迈进。
                         </h3>
                     </a>
                     <p class="post-meta">Created by <a href="#">Start Bootstrap</a> on Dec 24, 2017</p>
@@ -167,17 +169,17 @@ color:#333333;
                             <ul>
                             <li>
                                 <h3 class="post-subtitle">
-                            量身定制的解决方案
+                                量身定制的解决方案
                                 </h3>
                             </li>
                             <li>
                                 <h3 class="post-subtitle">
-                            成熟的培训体系
+                                成熟的培训体系
                                 </h3>
                             </li>
                             <li>
                                 <h3 class="post-subtitle">
-                            全面的技术支持
+                                全面的技术支持
                                 </h3>
                             </li>
                         </ul>
@@ -272,9 +274,30 @@ color:#333333;
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){ 
-            $('#myCarousel').carousel({interval:2000});//每隔5秒自动轮播 
+        $(document).ready(function(){ $(function(){
+        $(".typed").typed({
+            strings: ["一站式研发管理平台", "贡献力量服务更多的企业"],
+            typeSpeed: 200, //default
+            //optional
+            backSpeed: 100, //default
+            //optional
+            startDelay: 500, //default
+            //optional
+            backDelay: 500, //default
+            //optional
+            loop: false, //default
+            //optional    
+            showCursor: true, //default
+            //optional    
+            cursorChar: "|", //default
+            // optional callback called once the last string has been typed
+            onFinished: function(){}
+            // loop (boolean) : true
+        });
+    });
+            $('#myCarousel').carousel({interval:10000});//每隔5秒自动轮播 
         }); 
     </script>
 
